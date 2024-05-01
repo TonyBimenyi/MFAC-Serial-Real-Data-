@@ -21,7 +21,8 @@ def update_plot():
     ax.set_title('Real-time Data from Serial Port')
     ax.set_xlabel('Time')
     ax.set_ylabel('Data')
-    ax.plot(x_data, y_data, color='blue')
+    ax.plot(x_data, '--b')
+    ax.plot(y_data, '-r')
     plt.draw()
     plt.pause(0.01)
 
